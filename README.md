@@ -39,14 +39,14 @@ train.py loads all images in the Positive/Negative directory.
 
 #### Training Reconstruction model to make Anomaly Attention Map (AAN)
 For example, you can run this sample code:
-"""
+```
 python phase1.py \
 --GPU ${GPU_ID} --save_path ${SAVE_PATH} \
 --dataset ${DATASET}  --task "colorization" --n_splits 10 \
 --model "Unet" --loss "BCE" \
 --batch_size 16 --epochs 10 \
 --lr 1e-04
-"""
+```
 
 
 ### phase 2: Supervised Learning.
@@ -78,7 +78,7 @@ Dataset___01___GT___Train___image1
 ```
 #### Training Classifier model
 For example, you can run this sample code:
-"""
+```
 python phase2.py \
 --GPU  ${gpu_id} --save_path ${SAVE_PATH} \
 --dataset ${DATASET} --n_splits 10 \
@@ -88,7 +88,7 @@ python phase2.py \
 --attention_points 0 \
 --batch_size 16 --epochs 100 --lr 1e-04 \
 --epochs 3
-"""
+```
 
 ## Performance
 #### Effects of layer-wise external attention
