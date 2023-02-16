@@ -93,7 +93,9 @@ python phase2.py \
 ## Performance
 #### Effects of layer-wise external attention
 Visualization of feature maps at attention points before and after the layer-wise external attention.
+
 <div align="center">
     <img src="README_Figures/Overview_LEA-Net.png">
 </div>
+
 The data in the figure can be downloaded from [PlantVillage Dataset](https://www.kaggle.com/datasets/emmarex/plantdisease) and [DR2](https://figshare.com/articles/dataset/Advancing_Bag_of_Visual_Words_Representations_for_Lesion_Classification_in_Retinal_Images/953671/3).
